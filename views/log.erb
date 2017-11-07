@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <head>
+        <title>Welcome to my Hompage</title>
+    </head>
+    <body>
+        <h1>롤전적 검색 로그</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>승</th> 
+            <th>패</th>
+            <th>날짜</th>
+        </tr>
+    
+        <% @log.each do |row|%>
+        <tr>
+            <% row.each do |content|%>
+            <td><%= content %></td>
+            <% end %>
+        </tr>
+        <% end %>
+  
+</table>
+
+
+
+    </body>
+</html>
